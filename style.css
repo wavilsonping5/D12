@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --verdana: Verdana, Geneva, Tahoma, sans-serif;
+    --prompt: 'Prompt', sans-serif;
+    --sriracha: 'Sriracha', cursive;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -8,19 +18,23 @@
 html, body {
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--verdana);
 }
 
 header {
     background-color: black;
     color: white;
-    width: 100%;
     text-align: center;
+    max-width: 100%;
+    min-width: 300px;
 }
 
 header h1 {
     padding-top: 50px;
     /*text-transform: uppercase;*/
     font-variant: small-caps;
+    font-family: var(--prompt);
+    font-size: 3em;
 }
 
 header p {
@@ -45,6 +59,7 @@ main {
 
 main p {
     text-align: justify;
+    font-family: var(--sriracha);
 }
 
 section {
@@ -73,4 +88,6 @@ footer {
     text-align: center;
     color: white;
     padding: 10px 0px 10px 0px;
+    max-width: 100%;
+    min-width: 300px;
 }
