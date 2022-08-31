@@ -4,10 +4,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
+@font-face {
+    font-family: 'Cursiva Escolar';
+    src: url('cursiva_escolar.ttf') format('truetype');
+}
+
 :root {
     --verdana: Verdana, Geneva, Tahoma, sans-serif;
     --prompt: 'Prompt', sans-serif;
     --sriracha: 'Sriracha', cursive;
+    --cursiva-escolar: 'Cursiva Escolar', cursive;
 }
 
 * {
@@ -59,7 +65,8 @@ main {
 
 main p {
     text-align: justify;
-    font-family: var(--sriracha);
+    font-family: var(--cursiva-escolar);
+    font-size: 1.5em;
 }
 
 section {
